@@ -1,0 +1,22 @@
+{
+  "eduOnlineApp": {
+    "answerItem": {
+      "home": {
+        "title": "Answer Items",
+        "createLabel": "Create a new Answer Item",
+        "createOrEditLabel": "Create or edit a Answer Item",
+        "notFound": "No Answer Items found"
+      },
+      "created": "A new Answer Item is created with identifier {{ param }}",
+      "updated": "A Answer Item is updated with identifier {{ param }}",
+      "deleted": "A Answer Item is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Answer Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Answer Item"
+      },
+      "number": "Number"
+    }
+  }
+}

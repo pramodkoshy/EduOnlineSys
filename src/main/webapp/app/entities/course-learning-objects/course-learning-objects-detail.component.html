@@ -1,0 +1,48 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="courseLearningObjects">
+            <h2><span jhiTranslate="eduOnlineApp.courseLearningObjects.detail.title">Course Learning Objects</span> {{ courseLearningObjects.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eduOnlineApp.courseLearningObjects.name">Name</span></dt>
+                <dd>
+                    <span>{{ courseLearningObjects.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="eduOnlineApp.courseLearningObjects.type">Type</span></dt>
+                <dd>
+                    <span>{{ courseLearningObjects.type }}</span>
+                </dd>
+                <dt><span jhiTranslate="eduOnlineApp.courseLearningObjects.text">Text</span></dt>
+                <dd>
+                    <span>{{ courseLearningObjects.text }}</span>
+                </dd>
+                <dt><span jhiTranslate="eduOnlineApp.courseLearningObjects.url">Url</span></dt>
+                <dd>
+                    <span>{{ courseLearningObjects.url }}</span>
+                </dd>
+                <dt><span jhiTranslate="eduOnlineApp.courseLearningObjects.courseUnit">Course Unit</span></dt>
+                <dd>
+                    <div *ngIf="courseLearningObjects.courseUnitId">
+                        <a [routerLink]="['/course-unit', courseLearningObjects.courseUnitId, 'view']">{{ courseLearningObjects.courseUnitName }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/course-learning-objects', courseLearningObjects.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

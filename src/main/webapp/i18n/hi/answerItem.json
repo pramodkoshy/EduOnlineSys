@@ -1,0 +1,22 @@
+{
+  "eduOnlineApp": {
+    "answerItem": {
+      "home": {
+        "title": "AnswerItems",
+        "createLabel": "नया Answer Item बनाएँ",
+        "createOrEditLabel": "Answer Item बनाएँ या संपादित करें",
+        "notFound": "No Answer Items found"
+      },
+      "created": "एक नया Answer Item [identifier: {{ param }}] तैयार है",
+      "updated": "एक Answer Item [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Answer Item [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Answer Item [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Answer Item"
+      },
+      "number": "Number"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Question",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "number",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "questionItem",
+      "otherEntityRelationshipName": "question",
+      "relationshipName": "questionItem"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "exam",
+      "otherEntityRelationshipName": "question",
+      "relationshipName": "exam",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20230521153946",
+  "entityTableName": "question",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,23 @@
+{
+  "eduOnlineApp": {
+    "examRegistration": {
+      "home": {
+        "title": "ExamRegistrations",
+        "createLabel": "नया Exam Registration बनाएँ",
+        "createOrEditLabel": "Exam Registration बनाएँ या संपादित करें",
+        "notFound": "No Exam Registrations found"
+      },
+      "created": "एक नया Exam Registration [identifier: {{ param }}] तैयार है",
+      "updated": "एक Exam Registration [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Exam Registration [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Exam Registration [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Exam Registration"
+      },
+      "enrolmentDate": "Enrolment Date",
+      "teacher": "Teacher"
+    }
+  }
+}

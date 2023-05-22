@@ -1,0 +1,23 @@
+{
+  "eduOnlineApp": {
+    "courseEnrolment": {
+      "home": {
+        "title": "CourseEnrolments",
+        "createLabel": "नया Course Enrolment बनाएँ",
+        "createOrEditLabel": "Course Enrolment बनाएँ या संपादित करें",
+        "notFound": "No Course Enrolments found"
+      },
+      "created": "एक नया Course Enrolment [identifier: {{ param }}] तैयार है",
+      "updated": "एक Course Enrolment [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Course Enrolment [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Course Enrolment [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Course Enrolment"
+      },
+      "enrolmentDate": "Enrolment Date",
+      "student": "Student"
+    }
+  }
+}

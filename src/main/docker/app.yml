@@ -1,0 +1,15 @@
+version: '2'
+services:
+  eduonline-app:
+    image: eduonline
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - MICRONAUT_ENVIRONMENTS=prod
+      - JDBC_URL=jdbc:postgresql://eduonline-postgresql:5432/eduOnline
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+    ports:
+      - 8080:8080
+  eduonline-postgresql:
+    extends:
+      file: postgresql.yml
+      service: eduonline-postgresql

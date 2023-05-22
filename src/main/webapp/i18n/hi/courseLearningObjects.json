@@ -1,0 +1,26 @@
+{
+  "eduOnlineApp": {
+    "courseLearningObjects": {
+      "home": {
+        "title": "CourseLearningObjects",
+        "createLabel": "नया Course Learning Objects बनाएँ",
+        "createOrEditLabel": "Course Learning Objects बनाएँ या संपादित करें",
+        "notFound": "No Course Learning Objects found"
+      },
+      "created": "एक नया Course Learning Objects [identifier: {{ param }}] तैयार है",
+      "updated": "एक Course Learning Objects [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Course Learning Objects [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Course Learning Objects [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Course Learning Objects"
+      },
+      "name": "Name",
+      "type": "Type",
+      "text": "Text",
+      "url": "Url",
+      "courseUnit": "Course Unit"
+    }
+  }
+}

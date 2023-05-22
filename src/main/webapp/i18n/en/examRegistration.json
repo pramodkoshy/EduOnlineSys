@@ -1,0 +1,23 @@
+{
+  "eduOnlineApp": {
+    "examRegistration": {
+      "home": {
+        "title": "Exam Registrations",
+        "createLabel": "Create a new Exam Registration",
+        "createOrEditLabel": "Create or edit a Exam Registration",
+        "notFound": "No Exam Registrations found"
+      },
+      "created": "A new Exam Registration is created with identifier {{ param }}",
+      "updated": "A Exam Registration is updated with identifier {{ param }}",
+      "deleted": "A Exam Registration is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Exam Registration {{ id }}?"
+      },
+      "detail": {
+        "title": "Exam Registration"
+      },
+      "enrolmentDate": "Enrolment Date",
+      "teacher": "Teacher"
+    }
+  }
+}

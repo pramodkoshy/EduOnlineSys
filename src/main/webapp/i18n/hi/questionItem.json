@@ -1,0 +1,25 @@
+{
+  "eduOnlineApp": {
+    "questionItem": {
+      "home": {
+        "title": "QuestionItems",
+        "createLabel": "नया Question Item बनाएँ",
+        "createOrEditLabel": "Question Item बनाएँ या संपादित करें",
+        "notFound": "No Question Items found"
+      },
+      "created": "एक नया Question Item [identifier: {{ param }}] तैयार है",
+      "updated": "एक Question Item [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Question Item [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Question Item [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Question Item"
+      },
+      "name": "Name",
+      "number": "Number",
+      "answerItem": "Answer Item",
+      "question": "Question"
+    }
+  }
+}

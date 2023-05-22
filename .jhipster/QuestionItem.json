@@ -1,0 +1,45 @@
+{
+  "name": "QuestionItem",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "number",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "answerItem",
+      "otherEntityRelationshipName": "questionItem",
+      "relationshipName": "answerItem",
+      "otherEntityField": "number",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "question",
+      "otherEntityRelationshipName": "questionItem",
+      "relationshipName": "question",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20230521154046",
+  "entityTableName": "question_item",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

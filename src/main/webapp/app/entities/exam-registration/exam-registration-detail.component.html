@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="examRegistration">
+            <h2><span jhiTranslate="eduOnlineApp.examRegistration.detail.title">Exam Registration</span> {{ examRegistration.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eduOnlineApp.examRegistration.enrolmentDate">Enrolment Date</span></dt>
+                <dd>
+                    <span>{{ examRegistration.enrolmentDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="eduOnlineApp.examRegistration.teacher">Teacher</span></dt>
+                <dd>
+                    <div *ngIf="examRegistration.teacherId">
+                        <a [routerLink]="['/teacher', examRegistration.teacherId, 'view']">{{ examRegistration.teacherName }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/exam-registration', examRegistration.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

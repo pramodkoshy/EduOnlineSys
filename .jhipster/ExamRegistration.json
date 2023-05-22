@@ -1,0 +1,31 @@
+{
+  "name": "ExamRegistration",
+  "fields": [
+    {
+      "fieldName": "enrolmentDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "teacher",
+      "otherEntityRelationshipName": "examRegistration",
+      "relationshipName": "teacher",
+      "otherEntityField": "name",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20230521154646",
+  "entityTableName": "exam_registration",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

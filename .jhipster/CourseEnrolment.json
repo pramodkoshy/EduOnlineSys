@@ -1,0 +1,31 @@
+{
+  "name": "CourseEnrolment",
+  "fields": [
+    {
+      "fieldName": "enrolmentDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "student",
+      "otherEntityRelationshipName": "courseEnrolment",
+      "relationshipName": "student",
+      "otherEntityField": "name",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20230521154546",
+  "entityTableName": "course_enrolment",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,102 @@
+
+entity Teacher {
+    name        String    required minlength(1) maxlength(50)
+    qualifications String  required minlength(1) maxlength(500)
+
+}
+
+entity Student {
+    name        String    required minlength(1) maxlength(50)
+    qualifications String  required minlength(1) maxlength(500)
+    age Integer min(10) max(100)
+    grade        Integer  required min(1) max(12)
+    dateOfBirth  Instant  required
+    parentEmail  String   required minlength(5) maxlength(254)
+
+}
+
+entity Course {
+    name        String    required minlength(1) maxlength(50)
+    description String    required minlength(1) maxlength(500)
+    startDate   LocalDate required
+    endDate     LocalDate required
+}
+
+entity Exam {
+    name       String    required minlength(1) maxlength(50)
+    description String    required minlength(1) maxlength(500)
+
+}
+
+
+entity Question {
+    name       String    required minlength(1) maxlength(50)
+    description String    required minlength(1) maxlength(500)
+    number Integer required    
+}
+
+entity QuestionItem {
+    name       String    required minlength(1) maxlength(50)
+    number Integer required 
+}
+
+entity AnswerItem {
+    number Integer required 
+}
+
+
+entity CourseModule {
+    name       String    required minlength(1) maxlength(50)
+    description String    required minlength(1) maxlength(500)
+    startDate   LocalDate required
+    endDate     LocalDate required
+}
+
+entity CourseUnit {
+    name       String required minlength(1) maxlength(50)
+    description String required minlength(1) maxlength(500)
+}
+
+entity CourseLearningObjects {
+    name       String required minlength(1) maxlength(50)
+    type       String required minlength(1) maxlength(50)
+    text        TextBlob required 
+    url        String required minlength(5) maxlength(1000)
+}
+
+
+entity CourseEnrolment {
+    enrolmentDate LocalDate required
+}
+
+entity ExamRegistration {
+    enrolmentDate LocalDate required
+}
+
+relationship OneToMany {
+    Course to CourseModule{course(name)}
+    CourseModule to CourseUnit{courseModule(name)} 
+    CourseUnit to CourseLearningObjects{courseUnit(name)} 
+    Exam to Question{exam(name)}
+    Question to QuestionItem{question(name)}
+  
+}
+
+relationship OneToOne {
+  Teacher{internalUser} to User
+  Student{internalUser} to User
+  CourseEnrolment{student(name)} to Student
+  ExamRegistration{teacher(name)} to Teacher
+  Exam{course(name)} to Course
+  QuestionItem{answerItem(number)} to AnswerItem
+}
+
+relationship ManyToMany {
+  Student{courses(name) required} to Course{students(name)}
+}
+
+dto * with mapstruct
+service * with serviceImpl
+paginate * with pagination 
+
+

@@ -1,0 +1,26 @@
+{
+  "eduOnlineApp": {
+    "courseLearningObjects": {
+      "home": {
+        "title": "Course Learning Objects",
+        "createLabel": "Create a new Course Learning Objects",
+        "createOrEditLabel": "Create or edit a Course Learning Objects",
+        "notFound": "No Course Learning Objects found"
+      },
+      "created": "A new Course Learning Objects is created with identifier {{ param }}",
+      "updated": "A Course Learning Objects is updated with identifier {{ param }}",
+      "deleted": "A Course Learning Objects is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Course Learning Objects {{ id }}?"
+      },
+      "detail": {
+        "title": "Course Learning Objects"
+      },
+      "name": "Name",
+      "type": "Type",
+      "text": "Text",
+      "url": "Url",
+      "courseUnit": "Course Unit"
+    }
+  }
+}

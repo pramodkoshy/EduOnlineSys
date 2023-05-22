@@ -1,0 +1,25 @@
+{
+  "eduOnlineApp": {
+    "exam": {
+      "home": {
+        "title": "Exams",
+        "createLabel": "नया Exam बनाएँ",
+        "createOrEditLabel": "Exam बनाएँ या संपादित करें",
+        "notFound": "No Exams found"
+      },
+      "created": "एक नया Exam [identifier: {{ param }}] तैयार है",
+      "updated": "एक Exam [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Exam [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Exam [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Exam"
+      },
+      "name": "Name",
+      "description": "Description",
+      "course": "Course",
+      "question": "Question"
+    }
+  }
+}

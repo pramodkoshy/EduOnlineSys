@@ -1,0 +1,27 @@
+{
+  "eduOnlineApp": {
+    "courseModule": {
+      "home": {
+        "title": "CourseModules",
+        "createLabel": "नया Course Module बनाएँ",
+        "createOrEditLabel": "Course Module बनाएँ या संपादित करें",
+        "notFound": "No Course Modules found"
+      },
+      "created": "एक नया Course Module [identifier: {{ param }}] तैयार है",
+      "updated": "एक Course Module [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Course Module [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Course Module [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Course Module"
+      },
+      "name": "Name",
+      "description": "Description",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "courseUnit": "Course Unit",
+      "course": "Course"
+    }
+  }
+}

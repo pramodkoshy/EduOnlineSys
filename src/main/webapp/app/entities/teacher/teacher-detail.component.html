@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="teacher">
+            <h2><span jhiTranslate="eduOnlineApp.teacher.detail.title">Teacher</span> {{ teacher.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eduOnlineApp.teacher.name">Name</span></dt>
+                <dd>
+                    <span>{{ teacher.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="eduOnlineApp.teacher.qualifications">Qualifications</span></dt>
+                <dd>
+                    <span>{{ teacher.qualifications }}</span>
+                </dd>
+                <dt><span jhiTranslate="eduOnlineApp.teacher.internalUser">Internal User</span></dt>
+                <dd>
+                    {{ teacher.internalUserId }}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/teacher', teacher.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

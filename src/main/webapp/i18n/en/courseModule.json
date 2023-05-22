@@ -1,0 +1,27 @@
+{
+  "eduOnlineApp": {
+    "courseModule": {
+      "home": {
+        "title": "Course Modules",
+        "createLabel": "Create a new Course Module",
+        "createOrEditLabel": "Create or edit a Course Module",
+        "notFound": "No Course Modules found"
+      },
+      "created": "A new Course Module is created with identifier {{ param }}",
+      "updated": "A Course Module is updated with identifier {{ param }}",
+      "deleted": "A Course Module is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Course Module {{ id }}?"
+      },
+      "detail": {
+        "title": "Course Module"
+      },
+      "name": "Name",
+      "description": "Description",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "courseUnit": "Course Unit",
+      "course": "Course"
+    }
+  }
+}
